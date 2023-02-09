@@ -2,25 +2,26 @@ import React, { Component } from 'react'
 
 export default class Home extends Component {
     constructor(){
+        console.log('I was constructed')
         super();
         this.state =  {
-            name: 'David',
-            age: 9000
+            name: 'David'
+            
         }
     }
 
-    happyBirthday = () => {
-        console.log('this button was clicked')
-        // this.state.age += 1 //
-        this.setState({age: this.state.age + 1})
+    componentDidMount(){
+        console.log('I mounted')
     }
+
+    
 
     render() {
         return (
             <div>
             <h1>This is the home page of {this.state.name}</h1>
-            <p>{this.state.age}</p>
-            <button onClick={this.happyBirthday}>+</button>
+            <p>{this.props.age}</p>
+            <button onClick={this.props.happyBirthday}>+</button>
 
             <p>{this.props.test}</p>
             <p>{this.props.x}</p>
