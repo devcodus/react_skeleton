@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import CheckboxList from '../components/CheckBoxList'
 
-export default function Todo2 (props) {
+export default function Todo3 (props) {
 
   
 

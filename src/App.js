@@ -6,6 +6,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Feed from './views/Feed'
 import Todo from './views/Todo'
 import Todo2 from './views/Todo2'
+import Todo3 from './views/Todo3'
 import Test from './components/Test'
 
  
@@ -54,6 +55,7 @@ export default class App extends Component {
           <Route path="/feed" element={<Feed/>} />
           <Route path="/todo" element={<Todo/>} />
           <Route path="/todo2" element={<Todo2 myList={this.state.myList} addToDoSubmit= {this.addToDoSubmit} deleteToDo={this.deleteToDo}/>} />
+          <Route path="/todo3" element={<Todo3 myList={this.state.myList} addToDoSubmit= {this.addToDoSubmit} deleteToDo={this.deleteToDo}/>} />
           <Route path="/test" element={<Test parentAge={this.state.age} happyBirthday={this.happyBirthday} />} />
         </Routes>
 
