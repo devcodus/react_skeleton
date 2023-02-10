@@ -16,7 +16,6 @@ export default class Nav extends Component {
                       <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                       <Link className="nav-link" to="/news">News</Link>
                       <Link className="nav-link" to="/todo">To-Do</Link>
-                      <Link className="nav-link" to="/todo2">Class To-Do</Link>
                       <Link className="nav-link" to="/todo3">Functional To-Do</Link>
                       <Link className="nav-link" to="/feed">Instagram</Link>
                       <Link className="nav-link" to="/test">Functional Component Test</Link>

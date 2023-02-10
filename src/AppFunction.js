@@ -59,7 +59,6 @@ export default function App() {
                     <Route path="/news" element={<News age={age} />} />
                     <Route path="/feed" element={<Feed />} />
                     <Route path="/todo" element={<Todo />} />
-                    <Route path="/todo2 " element={<Todo2 myList={myList} addToDoSubmit={addToDoSubmit} deleteToDo={deleteToDo} />} />
                     <Route path="/todo3" element={<Todo3 myList={myList} addToDoSubmit={addToDoSubmit} deleteToDo={deleteToDo} />} />
                     <Route path="/test" element={<Test parentAge={age} happyBirthday={happyBirthday} />} />
                     <Route path="/signup" element={<SignUp/>} />
