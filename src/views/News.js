@@ -35,6 +35,10 @@ export default class News extends Component {
         this.getNews(term)
     }
 
+    handleChange = (e) => {
+        this.setState({inputText: e.target.value})
+    }
+
     render() {
         return (
             <div>
@@ -47,7 +51,7 @@ export default class News extends Component {
                 </form>
                 
                 <form>  
-                    <input placeholder='controlled  ' />
+                    <input placeholder='controlled' value={this.state.inputText} onChange={this.handleChange }/>
                     <button>Search</button>
                 </form>
 
